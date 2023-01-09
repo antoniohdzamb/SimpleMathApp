@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E82C5DD2296CA23F00B896FD /* TestPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E82C5DD1296CA23F00B896FD /* TestPackage */; };
 		E86CFAF929661DF60005AF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CFAF829661DF60005AF95 /* AppDelegate.swift */; };
 		E86CFAFB29661DF60005AF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CFAFA29661DF60005AF95 /* SceneDelegate.swift */; };
 		E86CFAFD29661DF60005AF95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CFAFC29661DF60005AF95 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E82C5DCF296CA14600B896FD /* TestPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TestPackage; path = ../TestPackage; sourceTree = "<group>"; };
 		E86CFAF529661DF60005AF95 /* SimpleMathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86CFAF829661DF60005AF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E86CFAFA29661DF60005AF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +33,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82C5DD2296CA23F00B896FD /* TestPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E82C5DCE296CA14600B896FD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E82C5DCF296CA14600B896FD /* TestPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E82C5DD0296CA23F00B896FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E86CFAEC29661DF60005AF95 = {
 			isa = PBXGroup;
 			children = (
+				E82C5DCE296CA14600B896FD /* Packages */,
 				E86CFAF729661DF60005AF95 /* SimpleMathApp */,
 				E86CFAF629661DF60005AF95 /* Products */,
+				E82C5DD0296CA23F00B896FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = SimpleMathApp;
+			packageProductDependencies = (
+				E82C5DD1296CA23F00B896FD /* TestPackage */,
+			);
 			productName = SimpleMathApp;
 			productReference = E86CFAF529661DF60005AF95 /* SimpleMathApp.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +381,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E82C5DD1296CA23F00B896FD /* TestPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E86CFAED29661DF60005AF95 /* Project object */;
 }

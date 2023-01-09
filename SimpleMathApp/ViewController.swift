@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import SimpleMathFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(SimpleAlgorithms.factorial(n: 5))
     }
-
 
 }
 
